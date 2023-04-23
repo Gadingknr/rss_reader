@@ -23,7 +23,9 @@ function addRSStoDOM(data) {
   var xhr = new XMLHttpRequest();
   xhr.onload = function() {
     if (xhr.status >=200 && xhr.status <300){
-        console.log("Success!") }else{
+      json = JSON.parse(xhr.responseText)
+        console.log(json) 
+      }else{
         console.log("Request failed!")
     }
   }
