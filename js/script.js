@@ -27,8 +27,11 @@ function addRSStoDOM(data) {
         console.log(json) 
       }else{
         console.log("Request failed!")
+        content.innerHTML = "The request failed, please check your RSS URL"
     }
   }
+
+var content = documen.getElementByTagName('main'[0])
 
 let addFeedButton = document.getElementById("add-feed");
 let newRSSInput = document.getElementById("rss-input");
