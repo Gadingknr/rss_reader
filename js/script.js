@@ -18,7 +18,7 @@ function addRSStoDOM(data) {
   titleElement.innerText = data.feed.title;
   content.appendChild(titleElement);
   content.appendChild(itemsContainer);
- 
+}
   
   var xhr = new XMLHttpRequest();
   xhr.onload = function() {
