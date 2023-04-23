@@ -27,6 +27,7 @@ function addRSStoDOM(data) {
     if (xhr.status >=200 && xhr.status < 300) {
       json = JSON.parse(xhr.responseText)
         console.log(json) 
+        addRSStoDOM(json)
       }else{
         console.log("Request failed!")
         content.innerHTML = "The request failed, please check your RSS URL"
