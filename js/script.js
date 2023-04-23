@@ -22,8 +22,9 @@ function addRSStoDOM(data) {
   var content = document.getElementsByTagName('main')[0]
 
   var xhr = new XMLHttpRequest();
+
   xhr.onload = function() {
-    if (xhr.status >=200 && xhr.status <300) {
+    if (xhr.status >=200 && xhr.status < 300) {
       json = JSON.parse(xhr.responseText)
         console.log(json) 
       }else{
