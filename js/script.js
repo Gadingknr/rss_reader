@@ -19,8 +19,10 @@ function addRSStoDOM(data) {
   content.appendChild(titleElement);
   content.appendChild(itemsContainer);
 }
-  
+  var content = documen.getElementByTagName('main') [0]
+
   var xhr = new XMLHttpRequest();
+
   xhr.onload = function() {
     if (xhr.status >=200 && xhr.status <300){
       json = JSON.parse(xhr.responseText)
@@ -30,8 +32,6 @@ function addRSStoDOM(data) {
         content.innerHTML = "The request failed, please check your RSS URL"
     }
   }
-
-var content = documen.getElementByTagName('main'[0])
 
 let addFeedButton = document.getElementById("add-feed");
 let newRSSInput = document.getElementById("rss-input");
