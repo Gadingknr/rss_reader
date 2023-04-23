@@ -19,7 +19,7 @@ function addRSStoDOM(data) {
   content.appendChild(titleElement);
   content.appendChild(itemsContainer);
 }
-  var content = documen.getElementByTagName('main') [0]
+  var content = documen.getElementsByTagName('main') [0]
 
   var xhr = new XMLHttpRequest();
 
